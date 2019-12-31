@@ -1,0 +1,59 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFm3Zbl038B8Sw=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model1",
+			"ownedElements": [
+				{
+					"_type": "UMLUseCaseDiagram",
+					"_id": "AAAAAAFm3Zbl038CsGs=",
+					"_parent": {
+						"$ref": "AAAAAAFm3Zbl038B8Sw="
+					},
+					"name": "UseCaseDiagram1",
+					"ownedViews": [
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFm3Zc3iX8GNzc=",
+							"_parent": {
+								"$ref": "AAAAAAFm3Zbl038CsGs="
+							},
+							"font": "Arial;13;0",
+							"left": 72,
+							"top": 32,
+							"width": 560,
+							"height": 504,
+							"text": "UseCase: Booking an animal\nSystem: Bakra Management System\nUser: Member\nPrecondition: Member is logged in\n1)\tMember gets list of the animals on display\n2)\tSystem displays all animals\n3)\tMember selects a specific animal\n4)\tSystem displays the basic information of an animal\n5)\tMember check its available shares\n6)\tSystem shows available shares\n7)\tMember allots required shares to the client\n8)\tSystem shows total price\n9)\tMember click on “Book animal” Button\n10)\tSystem prompt “Booking is Complete”\n\nAlternate paths:\n1b) If there is no animal on display then prompt “No animal available” message\n2b) User can specify the maximum amount of the animals to be displayed\n6b) If available shares are less than required then raise an exception.\n9b) If the client has not deposit the price in management account then prompt “Payment not received” message and raise an exception.\n"
+						}
+					]
+				}
+			]
+		}
+	]
+}
